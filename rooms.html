@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shamrock Homes - Beachfront Homestay</title>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Stripe JS -->
+  <script src="https://js.stripe.com/v3/"></script>
+</head>
+<body>
+  <header>
+    <div class="logo"><strong>Shamrock Homes</strong></div>
+    <nav>
+      <a href="landingpage.html#home">Home</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="rooms.html">Rooms</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="landingpage.html#contact">Contact</a>
+    </nav>
+    <a href="#booking-section" class="btn-book glass-effect">Book Now</a>
+    <div class="mobile-menu-btn">
+      <i class="fas fa-bars"></i>
+    </div>
+  </header>
+
+  <!-- Theme toggle button -->
+  <div class="theme-toggle">
+    <div class="afterglow"></div>
+  </div>
+
+  <section class="page-banner">
+    <div class="banner-content">
+      <h1>Our Rooms</h1>
+      <p>Luxury accommodations with stunning ocean views</p>
+    </div>
+  </section>
+
+  <section class="rooms-intro scroll-animation">
+    <div class="section-heading">
+      <h2>Accommodations</h2>
+    </div>
+    <p>At Shamrock Homes, we offer a variety of luxurious rooms designed to provide the utmost comfort during your beachfront getaway. Each room is meticulously maintained and features modern amenities to ensure a memorable stay.</p>
+  </section>
+
+  <section class="room-cards-section scroll-animation">
+    <div class="room-cards">
+      <div class="room-card glass-effect">
+        <div class="room-image">
+          <img src="imgs/Hilltop Villas Bathroom (10).jpg" alt="Standard Room">
+        </div>
+        <div class="room-content">
+          <h3 class="room-title">Standard Room</h3>
+          <div class="room-price">RM 350 / night</div>
+          <div class="room-features">
+            <div class="room-feature">
+              <i class="fas fa-user-friends"></i>
+              <span>2 Guests</span>
+            </div>
+            <div class="room-feature">
+              <i class="fas fa-bed"></i>
+              <span>1 King Bed</span>
+            </div>
+            <div class="room-feature">
+              <i class="fas fa-wifi"></i>
+              <span>Free WiFi</span>
+            </div>
+          </div>
+          <p>Our cozy standard room offers comfortable accommodation with essential amenities for a pleasant stay. Enjoy views of our lush gardens.</p>
+          <div class="room-amenities">
+            <span><i class="fas fa-tv"></i> Smart TV</span>
+            <span><i class="fas fa-snowflake"></i> AC</span>
+            <span><i class="fas fa-coffee"></i> Coffee Maker</span>
+          </div>
+          <button class="btn book-room-btn" data-room="Standard Room" data-price="350">Book Now</button>
+        </div>
+      </div>
+
+      <div class="room-card glass-effect">
+        <div class="room-image">
+          <img src="imgs/Hilltop Villas MasterRoom (6).jpg" alt="Deluxe Room">
+        </div>
+        <div class="room-content">
+          <h3 class="room-title">Deluxe Room</h3>
+          <div class="room-price">RM 550 / night</div>
+          <div class="room-features">
+            <div class="room-feature">
+              <i class="fas fa-user-friends"></i>
+              <span>2 Guests</span>
+            </div>
+            <div class="room-feature">
+              <i class="fas fa-bed"></i>
+              <span>1 King Bed</span>
+            </div>
+            <div class="room-feature">
+              <i class="fas fa-wifi"></i>
+              <span>Free WiFi</span>
+            </div>
+          </div>
+          <p>Our deluxe room offers additional space and enhanced amenities, with partial ocean views and a private balcony.</p>
+          <div class="room-amenities">
+            <span><i class="fas fa-tv"></i> Smart TV</span>
+            <span><i class="fas fa-snowflake"></i> AC</span>
+            <span><i class="fas fa-coffee"></i> Coffee Maker</span>
+            <span><i class="fas fa-wind"></i> Balcony</span>
+          </div>
+          <button class="btn book-room-btn" data-room="Deluxe Room" data-price="550">Book Now</button>
+        </div>
+      </div>
+
+      <div class="room-card glass-effect">
+        <div class="room-image">
+          <img src="imgs/Hilltop Villas MasterRoom (2).jpg" alt="Beach Suite">
+        </div>
+        <div class="room-content">
+          <h3 class="room-title">Beach Suite</h3>
+          <div class="room-price">RM 950 / night</div>
+          <div class="room-features">
+            <div class="room-feature">
+              <i class="fas fa-user-friends"></i>
+              <span>4 Guests</span>
+            </div>
+            <div class="room-feature">
+              <i class="fas fa-bed"></i>
+              <span>1 King + 2 Singles</span>
+            </div>
+            <div class="room-feature">
+              <i class="fas fa-wifi"></i>
+              <span>Free WiFi</span>
+            </div>
+          </div>
+          <p>Our premium beach suite offers direct beach access with panoramic ocean views, a separate living area, and premium amenities.</p>
+          <div class="room-amenities">
+            <span><i class="fas fa-tv"></i> Smart TV</span>
+            <span><i class="fas fa-snowflake"></i> AC</span>
+            <span><i class="fas fa-coffee"></i> Coffee Maker</span>
+            <span><i class="fas fa-wind"></i> Balcony</span>
+            <span><i class="fas fa-couch"></i> Living Area</span>
+          </div>
+          <button class="btn book-room-btn" data-room="Beach Suite" data-price="950">Book Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="room-amenities-section scroll-animation alt">
+    <div class="section-heading">
+      <h2>Room Amenities</h2>
+    </div>
+    <div class="amenities-container">
+      <div class="amenity-group">
+        <h3><i class="fas fa-bed"></i> Comfort</h3>
+        <ul>
+          <li>Premium mattresses</li>
+          <li>High-quality linens</li>
+          <li>Blackout curtains</li>
+          <li>Climate control</li>
+          <li>Soundproofing</li>
+        </ul>
+      </div>
+      <div class="amenity-group">
+        <h3><i class="fas fa-bath"></i> Bathroom</h3>
+        <ul>
+          <li>Rainfall shower</li>
+          <li>Premium toiletries</li>
+          <li>Hairdryer</li>
+          <li>Plush towels</li>
+          <li>Bathrobes</li>
+        </ul>
+      </div>
+      <div class="amenity-group">
+        <h3><i class="fas fa-tv"></i> Entertainment</h3>
+        <ul>
+          <li>Smart TV</li>
+          <li>High-speed WiFi</li>
+          <li>Bluetooth speakers</li>
+          <li>Streaming services</li>
+          <li>International channels</li>
+        </ul>
+      </div>
+      <div class="amenity-group">
+        <h3><i class="fas fa-concierge-bell"></i> Services</h3>
+        <ul>
+          <li>Daily housekeeping</li>
+          <li>24-hour room service</li>
+          <li>Laundry service</li>
+          <li>Wake-up calls</li>
+          <li>Luggage assistance</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="booking-section" class="booking-section scroll-animation">
+    <div class="section-heading">
+      <h2>Book Your Stay</h2>
+    </div>
+    <div class="booking-container glass-effect">
+      <div class="booking-header">
+        <h3>Reservation Details</h3>
+        <p id="selected-room-info">Please select your desired room and dates</p>
+      </div>
+      <div class="booking-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="room-select">Room Type</label>
+            <select id="room-select" class="form-control" required>
+              <option value="">Select a Room</option>
+              <option value="Standard Room" data-price="350">Standard Room - RM 350/night</option>
+              <option value="Deluxe Room" data-price="550">Deluxe Room - RM 550/night</option>
+              <option value="Beach Suite" data-price="950">Beach Suite - RM 950/night</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="checkin-date">Check-in Date</label>
+            <input type="date" id="checkin-date" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="checkout-date">Check-out Date</label>
+            <input type="date" id="checkout-date" class="form-control" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="adults">Adults</label>
+            <select id="adults" class="form-control">
+              <option value="1">1</option>
+              <option value="2" selected>2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="children">Children</label>
+            <select id="children" class="form-control">
+              <option value="0" selected>0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </div>
+        </div>
+        <div class="price-summary">
+          <div class="price-row">
+            <span>Room Rate:</span>
+            <span id="room-rate">RM 0</span>
+          </div>
+          <div class="price-row">
+            <span>Number of Nights:</span>
+            <span id="num-nights">0</span>
+          </div>
+          <div class="price-row total">
+            <span>Total:</span>
+            <span id="total-price">RM 0</span>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="guest-name">Full Name</label>
+            <input type="text" id="guest-name" class="form-control" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <label for="guest-email">Email Address</label>
+            <input type="email" id="guest-email" class="form-control" placeholder="Your Email" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="guest-phone">Phone Number</label>
+            <input type="tel" id="guest-phone" class="form-control" placeholder="Your Phone Number" required>
+          </div>
+          <div class="form-group">
+            <label for="special-requests">Special Requests</label>
+            <textarea id="special-requests" rows="4" placeholder="Any special requirements..."></textarea>
+          </div>
+        </div>
+        <div class="payment-section">
+          <h3>Payment Information</h3>
+          <div class="form-group">
+            <label for="card-element">Credit or debit card</label>
+            <div id="card-element" class="card-element">
+              <!-- Stripe Element will be inserted here -->
+            </div>
+            <div id="card-errors" class="payment-error" role="alert"></div>
+          </div>
+        </div>
+        <div class="booking-actions">
+          <button id="confirm-booking" class="btn-book glass-effect">Confirm Booking</button>
+          <a href="https://wa.me/+60123456789?text=Hello%20Shamrock%20Homes%2C%20I'd%20like%20to%20confirm%20my%20booking%20details%20via%20WhatsApp." target="_blank" class="whatsapp-btn glass-effect"><i class="fab fa-whatsapp"></i> Confirm via WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="policies-section scroll-animation">
+    <div class="section-heading">
+      <h2>Policies</h2>
+    </div>
+    <div class="policies-container">
+      <div class="policy-card glass-effect">
+        <h3><i class="fas fa-clock"></i> Check-in/Check-out</h3>
+        <ul>
+          <li>Check-in: 2:00 PM - 10:00 PM</li>
+          <li>Check-out: By 12:00 PM</li>
+          <li>Early check-in and late check-out available upon request (additional fees may apply)</li>
+        </ul>
+      </div>
+      <div class="policy-card glass-effect">
+        <h3><i class="fas fa-ban"></i> Cancellation</h3>
+        <ul>
+          <li>Free cancellation up to 7 days before check-in</li>
+          <li>50% refund for cancellations 3-7 days before check-in</li>
+          <li>No refund for cancellations less than 3 days before check-in</li>
+        </ul>
+      </div>
+      <div class="policy-card glass-effect">
+        <h3><i class="fas fa-paw"></i> Pet Policy</h3>
+        <ul>
+          <li>We are pet-friendly in select rooms</li>
+          <li>Additional cleaning fee of RM 100 applies</li>
+          <li>Please inform us in advance if bringing pets</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-column">
+        <h3>Shamrock Homes</h3>
+        <p>Your perfect beachfront getaway in Batu Ferringhi, Penang. Experience luxury, comfort, and unforgettable memories.</p>
+        <div class="social-links">
+          <a href="#" class="social-link glass-effect"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-link glass-effect"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link glass-effect"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-link glass-effect"><i class="fab fa-pinterest"></i></a>
+          <a href="#" class="social-link glass-effect"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h3>Contact Us</h3>
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Batu Ferringhi Beach, Penang, Malaysia</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <span>+60 4 123 4567</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>info@shamrockhomes.com</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="landingpage.html#home">Home</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="rooms.html">Rooms</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="landingpage.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Shamrock Homes. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </div>
+  </footer>
+
+  <script>
+    // Scroll animation
+    const scrollElements = document.querySelectorAll('.scroll-animation');
+    
+    const elementInView = (el, percentageScroll = 100) => {
+      const elementTop = el.getBoundingClientRect().top;
+      return (elementTop <= (window.innerHeight || document.documentElement.clientHeight) * (percentageScroll/100));
+    };
+    
+    const displayScrollElement = (element) => {
+      element.classList.add('visible');
+    };
+    
+    const hideScrollElement = (element) => {
+      element.classList.remove('visible');
+    };
+    
+    const handleScrollAnimation = () => {
+      scrollElements.forEach((el) => {
+        if (elementInView(el, 75)) {
+          displayScrollElement(el);
+        } else {
+          hideScrollElement(el);
+        }
+      })
+    }
+    
+    // Initialize on load
+    window.addEventListener('load', () => {
+      handleScrollAnimation();
+    });
+    
+    // Add scroll event
+    window.addEventListener('scroll', () => {
+      handleScrollAnimation();
+    });
+    
+    // Header scroll effect
+    const header = document.querySelector('header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+    
+    // Mobile menu toggle
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const nav = document.querySelector('nav');
+    
+    mobileMenuBtn.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+    
+    // Booking functionality
+    const roomSelect = document.getElementById('room-select');
+    const checkinDate = document.getElementById('checkin-date');
+    const checkoutDate = document.getElementById('checkout-date');
+    const roomRate = document.getElementById('room-rate');
+    const numNights = document.getElementById('num-nights');
+    const totalPrice = document.getElementById('total-price');
+    const selectedRoomInfo = document.getElementById('selected-room-info');
+    const confirmBookingBtn = document.getElementById('confirm-booking');
+    const bookRoomBtns = document.querySelectorAll('.book-room-btn');
+    
+    // Set minimum dates for check-in and check-out
+    const today = new Date();
+    const tomorrow = new Date(today);
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    
+    const formatDate = (date) => {
+      const year = date.getFullYear();
+      const month = String(date.getMonth() + 1).padStart(2, '0');
+      const day = String(date.getDate()).padStart(2, '0');
+      return `${year}-${month}-${day}`;
+    };
+    
+    checkinDate.min = formatDate(today);
+    checkoutDate.min = formatDate(tomorrow);
+    
+    // Function to calculate total price
+    const calculatePrice = () => {
+      if (roomSelect.value && checkinDate.value && checkoutDate.value) {
+        const roomPrice = parseFloat(roomSelect.options[roomSelect.selectedIndex].dataset.price);
+        const checkIn = new Date(checkinDate.value);
+        const checkOut = new Date(checkoutDate.value);
+        
+        // Calculate the difference in days
+        const timeDiff = checkOut.getTime() - checkIn.getTime();
+        const nights = Math.ceil(timeDiff / (1000 * 3600 * 24));
+        
+        if (nights > 0) {
+          roomRate.textContent = `RM ${roomPrice}`;
+          numNights.textContent = nights;
+          totalPrice.textContent = `RM ${roomPrice * nights}`;
+          selectedRoomInfo.textContent = `${roomSelect.value} - RM ${roomPrice} per night`;
+          
+          // Update summary in checkout
+          if (document.getElementById('summary-room')) {
+            document.getElementById('summary-room').textContent = roomSelect.options[roomSelect.selectedIndex].text;
+            document.getElementById('summary-check-in').textContent = checkinDate.value;
+            document.getElementById('summary-check-out').textContent = checkoutDate.value;
+            document.getElementById('summary-nights').textContent = nights;
+            document.getElementById('summary-rate').textContent = `RM ${roomPrice}`;
+            document.getElementById('summary-total').textContent = `RM ${roomPrice * nights}`;
+          }
+        }
+      }
+    };
+    
+    // Event listeners for form fields
+    roomSelect.addEventListener('change', calculatePrice);
+    checkinDate.addEventListener('change', () => {
+      // Set minimum checkout date to the day after check-in
+      const minCheckout = new Date(checkinDate.value);
+      minCheckout.setDate(minCheckout.getDate() + 1);
+      checkoutDate.min = formatDate(minCheckout);
+      
+      // If checkout date is before new minimum, update it
+      if (new Date(checkoutDate.value) < minCheckout) {
+        checkoutDate.value = formatDate(minCheckout);
+      }
+      
+      calculatePrice();
+    });
+    checkoutDate.addEventListener('change', calculatePrice);
+    
+    // Handle "Book Now" buttons from room cards
+    bookRoomBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const roomName = btn.getAttribute('data-room');
+        const roomPrice = btn.getAttribute('data-price');
+        
+        // Set the room in the select dropdown
+        for (let i = 0; i < roomSelect.options.length; i++) {
+          if (roomSelect.options[i].value === roomName) {
+            roomSelect.selectedIndex = i;
+            break;
+          }
+        }
+        
+        // Scroll to booking section
+        document.getElementById('booking-section').scrollIntoView({behavior: 'smooth'});
+        
+        // Update price calculations
+        calculatePrice();
+      });
+    });
+    
+    // Initialize Stripe elements
+    let stripe;
+    let elements;
+    let card;
+    let isStripeInitialized = false;
+    
+    function initializeStripe() {
+      if (!isStripeInitialized) {
+        // Replace with your publishable key
+        stripe = Stripe('pk_test_51OxJMxDHrJIVlkr6OGKKq1sxsOqxmXzBSB2FWXsAxYzxZ56yBCqCY2YB6wqCxgJntLZHLZyE6O5uBfOeGiNgSq4w00uoXmcVJi');
+        elements = stripe.elements();
+        
+        // Create card Element and mount it
+        card = elements.create('card', {
+          style: {
+            base: {
+              color: '#32325d',
+              fontFamily: '"Helvetica Neue", Helvetica, sans-serif',
+              fontSmoothing: 'antialiased',
+              fontSize: '16px',
+              '::placeholder': {
+                color: '#aab7c4'
+              }
+            },
+            invalid: {
+              color: '#fa755a',
+              iconColor: '#fa755a'
+            }
+          }
+        });
+        
+        card.mount('#card-element');
+        
+        // Handle real-time validation errors
+        card.on('change', function(event) {
+          const displayError = document.getElementById('card-errors');
+          if (event.error) {
+            displayError.textContent = event.error.message;
+          } else {
+            displayError.textContent = '';
+          }
+        });
+        
+        // Handle form submission
+        const form = document.querySelector('.booking-form');
+        const confirmButton = document.getElementById('confirm-booking');
+        
+        confirmButton.addEventListener('click', async function(event) {
+          event.preventDefault();
+          
+          // Disable the submit button to prevent repeated clicks
+          confirmButton.disabled = true;
+          confirmButton.textContent = 'Processing...';
+          
+          const bookingData = getBookingData();
+          if (!validateBookingData(bookingData)) {
+            confirmButton.disabled = false;
+            confirmButton.textContent = 'Confirm Booking';
+            return;
+          }
+          
+          try {
+            const { paymentMethod, error } = await stripe.createPaymentMethod({
+              type: 'card',
+              card: card
+            });
+            
+            if (error) {
+              const errorElement = document.getElementById('card-errors');
+              errorElement.textContent = error.message;
+              confirmButton.disabled = false;
+              confirmButton.textContent = 'Confirm Booking';
+            } else {
+              // Here you would normally send the paymentMethod.id to your server
+              // For this demo, we'll just show success and log to console
+              console.log('Payment method created:', paymentMethod);
+              showBookingSuccess(bookingData);
+            }
+          } catch (err) {
+            console.error('Payment error:', err);
+            const errorElement = document.getElementById('card-errors');
+            errorElement.textContent = 'An unexpected error occurred. Please try again.';
+            confirmButton.disabled = false;
+            confirmButton.textContent = 'Confirm Booking';
+          }
+        });
+        
+        isStripeInitialized = true;
+      }
+    }
+    
+    // Function to validate booking data
+    function validateBookingData(data) {
+      let isValid = true;
+      let errorMessage = '';
+      
+      if (!data.name || data.name.trim() === '') {
+        errorMessage += 'Please enter your name.\n';
+        isValid = false;
+      }
+      
+      if (!data.email || !data.email.includes('@')) {
+        errorMessage += 'Please enter a valid email address.\n';
+        isValid = false;
+      }
+      
+      if (!data.phone || data.phone.trim() === '') {
+        errorMessage += 'Please enter your phone number.\n';
+        isValid = false;
+      }
+      
+      if (!data.checkIn || !data.checkOut) {
+        errorMessage += 'Please select check-in and check-out dates.\n';
+        isValid = false;
+      }
+      
+      if (!data.roomType) {
+        errorMessage += 'Please select a room type.\n';
+        isValid = false;
+      }
+      
+      if (!isValid) {
+        alert('Please fix the following errors:\n\n' + errorMessage);
+      }
+      
+      return isValid;
+    }
+    
+    // Function to get booking data from form
+    function getBookingData() {
+      return {
+        name: document.getElementById('guest-name').value,
+        email: document.getElementById('guest-email').value,
+        phone: document.getElementById('guest-phone').value,
+        checkIn: document.getElementById('checkin-date').value,
+        checkOut: document.getElementById('checkout-date').value,
+        adults: document.getElementById('adults').value,
+        children: document.getElementById('children').value,
+        roomType: document.getElementById('room-select').value,
+        specialRequests: document.getElementById('special-requests').value,
+        totalPrice: document.getElementById('total-price').textContent
+      };
+    }
+    
+    // Function to show booking success
+    function showBookingSuccess(bookingData) {
+      const bookingForm = document.querySelector('.booking-form');
+      const confirmButton = document.getElementById('confirm-booking');
+      
+      // Create success message
+      const successDiv = document.createElement('div');
+      successDiv.className = 'booking-success glass-effect';
+      successDiv.innerHTML = `
+        <i class="fas fa-check-circle"></i>
+        <h3>Booking Confirmed!</h3>
+        <p>Thank you for your booking, ${bookingData.name}.</p>
+        <p>A confirmation email has been sent to ${bookingData.email}.</p>
+        <p>Your booking reference: SHA-${Math.floor(100000 + Math.random() * 900000)}</p>
+        <button class="btn-book glass-effect" onclick="window.location.reload()">Make Another Booking</button>
+      `;
+      
+      // Replace form with success message
+      bookingForm.innerHTML = '';
+      bookingForm.appendChild(successDiv);
+      
+      // Scroll to success message
+      successDiv.scrollIntoView({ behavior: 'smooth' });
+    }
+    
+    // Initialize Stripe on page load
+    window.addEventListener('load', function() {
+      initializeStripe();
+    });
+    
+    // Theme toggle functionality
+    const themeToggle = document.querySelector('.theme-toggle');
+    const htmlElement = document.documentElement;
+    
+    // Check for saved theme preference
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    htmlElement.setAttribute('data-theme', savedTheme);
+    if (savedTheme === 'dark') {
+      themeToggle.classList.add('dark-mode');
+    }
+    
+    // Toggle theme on click
+    themeToggle.addEventListener('click', () => {
+      themeToggle.classList.toggle('dark-mode');
+      const currentTheme = htmlElement.getAttribute('data-theme');
+      const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+      
+      htmlElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+    });
+  </script>
+
+  <!-- Add success message styles -->
+  <style>
+    .success-message {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(5px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      animation: fadeIn 0.3s ease;
+    }
+    
+    .success-content {
+      background: white;
+      border-radius: 10px;
+      padding: 2rem;
+      text-align: center;
+      max-width: 90%;
+      width: 400px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    }
+    
+    .success-content i {
+      font-size: 3rem;
+      color: #6b9080;
+      margin-bottom: 1rem;
+    }
+    
+    .success-content h3 {
+      margin: 0 0 1rem;
+      color: #333;
+    }
+    
+    .success-content p {
+      margin-bottom: 1.5rem;
+      color: #666;
+    }
+    
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    
+    .spinner {
+      color: #ffffff;
+      font-size: 22px;
+      text-indent: -99999px;
+      margin: 0px auto;
+      position: relative;
+      width: 20px;
+      height: 20px;
+      box-shadow: inset 0 0 0 2px;
+      -webkit-transform: translateZ(0);
+      -ms-transform: translateZ(0);
+      transform: translateZ(0);
+    }
+    
+    .spinner:before,
+    .spinner:after {
+      position: absolute;
+      content: '';
+    }
+    
+    .spinner:before {
+      width: 10.4px;
+      height: 20.4px;
+      background: var(--primary-color);
+      border-radius: 20.4px 0 0 20.4px;
+      top: -0.2px;
+      left: -0.2px;
+      -webkit-transform-origin: 10.4px 10.2px;
+      transform-origin: 10.4px 10.2px;
+      -webkit-animation: loading 2s infinite ease 1.5s;
+      animation: loading 2s infinite ease 1.5s;
+    }
+    
+    .spinner:after {
+      width: 10.4px;
+      height: 10.2px;
+      background: var(--primary-color);
+      border-radius: 0 10.2px 10.2px 0;
+      top: -0.1px;
+      left: 10.2px;
+      -webkit-transform-origin: 0px 10.2px;
+      transform-origin: 0px 10.2px;
+      -webkit-animation: loading 2s infinite ease;
+      animation: loading 2s infinite ease;
+    }
+    
+    @-webkit-keyframes loading {
+      0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+    
+    @keyframes loading {
+      0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+    
+    .hidden {
+      display: none;
+    }
+  </style>
+</body>
+</html>

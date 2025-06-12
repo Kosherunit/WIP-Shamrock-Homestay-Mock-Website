@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shamrock Homes - Beachfront Homestay</title>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+  <header>
+    <div class="logo"><strong>Shamrock Homes</strong></div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="rooms.html">Rooms</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#book" class="btn-book glass-effect">Book Now</a>
+    <div class="mobile-menu-btn">
+      <i class="fas fa-bars"></i>
+    </div>
+  </header>
+
+  <!-- Theme toggle button -->
+  <div class="theme-toggle">
+    <div class="afterglow"></div>
+  </div>
+
+  <section class="hero" id="home">
+    <div class="hero-content animate">
+      <h1>Welcome to Shamrock Homes</h1>
+      <p>Your private beachfront homestay in Batu Ferringhi, Penang</p>
+      <button class="btn-explore glass-effect">Explore Now</button>
+    </div>
+    <div class="scroll-down">
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <section id="about" class="scroll-animation">
+    <div class="section-heading">
+      <h2>About Us</h2>
+    </div>
+    <p>Located at Batu Ferringhi, Shamrock Homes is ideal for families and groups looking for a relaxing beachside stay close to night markets and local food.</p>
+    
+    <div class="features">
+      <div class="feature-card glass-effect">
+        <i class="fas fa-shield-alt"></i>
+        <strong>24 Hour Security</strong>
+        <p>Rest easy with our round-the-clock security services.</p>
+      </div>
+      <div class="feature-card glass-effect">
+        <i class="fas fa-wifi"></i>
+        <strong>Free Wifi</strong>
+        <p>Stay connected with high-speed internet throughout your stay.</p>
+      </div>
+      <div class="feature-card glass-effect">
+        <i class="fas fa-swimming-pool"></i>
+        <strong>Private Pool</strong>
+        <p>Enjoy exclusive access to our pristine swimming pool.</p>
+      </div>
+      <div class="feature-card glass-effect">
+        <i class="fas fa-water"></i>
+        <strong>All-day Beach Views</strong>
+        <p>Wake up to breathtaking ocean views from your window.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="experience scroll-animation alt">
+    <div class="section-heading">
+      <h2>Experience Luxury</h2>
+    </div>
+    <div class="experience-container">
+      <div class="experience-image">
+        <img src="imgs/Hilltop Villas (48).jpg" alt="Luxury Experience">
+      </div>
+      <div class="experience-content">
+        <h3>A Unique Stay</h3>
+        <p>At Shamrock Homes, we believe in creating memories that last a lifetime. Our beachfront homestay offers a perfect blend of comfort, luxury, and authentic local experiences.</p>
+        <p>Whether you're looking for a peaceful retreat or an adventure-filled vacation, our dedicated staff ensures your stay exceeds expectations.</p>
+        <a href="rooms.html" class="btn glass-effect">View Our Rooms</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- T-Rex Game Section -->
+  <section class="game-section scroll-animation">
+    <div class="section-heading">
+      <h2>Take a Break</h2>
+      <p>Challenge yourself with our little game while planning your stay</p>
+    </div>
+    <div class="game-container glass-effect">
+      <div class="game-wrapper">
+        <div class="game-status">
+          <div class="score">Score: <span id="score">0</span></div>
+          <div class="high-score">High Score: <span id="highScore">0</span></div>
+          <div class="win-status" id="winStatus"></div>
+        </div>
+        <canvas id="game" width="600" height="150"></canvas>
+        <div class="game-controls">
+          <button id="startGame" class="btn glass-effect">Start Game</button>
+          <p class="game-instructions">Press Space to jump, or tap the screen on mobile devices</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery-preview scroll-animation" id="gallery">
+    <div class="section-heading">
+      <h2>Gallery Highlights</h2>
+    </div>
+    <div class="gallery">
+      <div class="gallery-item wide">
+        <img src="https://images.unsplash.com/photo-1559767949-0faa5c7e9992?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Homestay Photo 1">
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Homestay Photo 2">
+      </div>
+      <div class="gallery-item tall">
+        <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Homestay Photo 3">
+      </div>
+    </div>
+    <div class="gallery-cta">
+      <a href="gallery.html" class="btn glass-effect">View Full Gallery</a>
+    </div>
+  </section>
+
+  <section class="testimonials-section scroll-animation alt">
+    <div class="section-heading">
+      <h2>What Our Guests Say</h2>
+    </div>
+    <div class="testimonials">
+      <div class="testimonial glass-effect">
+        <div class="testimonial-content">"Such a peaceful stay! My family loved the view and location. The staff was incredibly attentive and made us feel right at home."</div>
+        <div class="testimonial-author">
+          <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Aina">
+          <div>
+            <h4>Aina</h4>
+            <p>Family Vacation</p>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial glass-effect">
+        <div class="testimonial-content">"Perfect for our private event. Will book again! The beachfront location provided a stunning backdrop for our celebration."</div>
+        <div class="testimonial-author">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Joseph">
+          <div>
+            <h4>Joseph</h4>
+            <p>Corporate Retreat</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="things scroll-animation">
+    <div class="section-heading">
+      <h2>Things to Do</h2>
+    </div>
+    <div class="activities-container">
+      <div class="activity-card glass-effect">
+        <i class="fas fa-walking"></i>
+        <h3>Beach Walking</h3>
+        <p>Enjoy serene walks along the pristine beaches of Batu Ferringhi.</p>
+      </div>
+      <div class="activity-card glass-effect">
+        <i class="fas fa-store"></i>
+        <h3>Batu Ferringhi Night Market</h3>
+        <p>Explore local crafts, souvenirs, and delicious street food.</p>
+      </div>
+      <div class="activity-card glass-effect">
+        <i class="fas fa-apple-alt"></i>
+        <h3>Durian Tour</h3>
+        <p>Experience Malaysia's king of fruits with our specialized tours (Bookings available).</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="book" class="scroll-animation alt">
+    <div class="section-heading">
+      <h2>Book Your Stay</h2>
+    </div>
+    <div class="booking-container glass-effect">
+      <div class="booking-header">
+        <h3>Check Availability</h3>
+      </div>
+      <div class="booking-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" class="form-control" placeholder="Full Name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" class="form-control" placeholder="Email Address" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="checkin">Check-in Date</label>
+            <input type="date" id="checkin" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="checkout">Check-out Date</label>
+            <input type="date" id="checkout" class="form-control">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="guests">Number of Guests</label>
+            <input type="number" id="guests" class="form-control" placeholder="Number of Guests" min="1">
+          </div>
+          <div class="form-group">
+            <label for="room-type">Room Type</label>
+            <select id="room-type" class="form-control">
+              <option value="">Select Room Type</option>
+              <option value="standard">Standard Room</option>
+              <option value="deluxe">Deluxe Room</option>
+              <option value="suite">Beach Suite</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="requests">Special Requests</label>
+          <textarea id="requests" class="form-control" placeholder="Any special requirements..."></textarea>
+        </div>
+        <button type="submit" class="glass-effect">Confirm Booking</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta scroll-animation" id="contact">
+    <div class="section-heading">
+      <h2>Get in Touch</h2>
+    </div>
+    <div class="cta-form">
+      <form>
+        <div class="form-row">
+          <div class="form-group">
+            <input type="text" placeholder="Full Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Email" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <textarea placeholder="Message"></textarea>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="glass-effect">Send Message</button>
+          <a href="https://wa.me/+60123456789?text=Hello%20Shamrock%20Homes%2C%20I'm%20interested%20in%20booking%20a%20stay." target="_blank" class="whatsapp-btn glass-effect"><i class="fab fa-whatsapp"></i> Contact on WhatsApp</a>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-column">
+        <h3>Shamrock Homes</h3>
+        <p>Your perfect beachfront getaway in Batu Ferringhi, Penang. Experience luxury, comfort, and unforgettable memories.</p>
+        <div class="social-links">
+          <a href="#" class="social-link glass-effect"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-link glass-effect"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link glass-effect"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-link glass-effect"><i class="fab fa-pinterest"></i></a>
+          <a href="#" class="social-link glass-effect"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h3>Contact Us</h3>
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Batu Ferringhi Beach, Penang, Malaysia</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <span>+60 165568420 Ivan</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>info@shamrockhomes.com</span> 
+          </div>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="rooms.html">Rooms</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Webpage by Kosherunit (Ivan). All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </div>
+  </footer>
+
+  <script>
+    // Scroll animation
+    const scrollElements = document.querySelectorAll('.scroll-animation');
+    
+    const elementInView = (el, percentageScroll = 100) => {
+      const elementTop = el.getBoundingClientRect().top;
+      return (elementTop <= (window.innerHeight || document.documentElement.clientHeight) * (percentageScroll/100));
+    };
+    
+    const displayScrollElement = (element) => {
+      element.classList.add('visible');
+    };
+    
+    const hideScrollElement = (element) => {
+      element.classList.remove('visible');
+    };
+    
+    const handleScrollAnimation = () => {
+      scrollElements.forEach((el) => {
+        if (elementInView(el, 75)) {
+          displayScrollElement(el);
+        } else {
+          hideScrollElement(el);
+        }
+      })
+    }
+    
+    // Initialize on load
+    window.addEventListener('load', () => {
+      handleScrollAnimation();
+    });
+    
+    // Add scroll event
+    window.addEventListener('scroll', () => {
+      handleScrollAnimation();
+    });
+    
+    // Header scroll effect
+    const header = document.querySelector('header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+    
+    // Smooth scroll animation
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+    
+    // Mobile menu toggle
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const nav = document.querySelector('nav');
+    
+    mobileMenuBtn.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+    
+    // Scroll down button
+    document.querySelector('.scroll-down').addEventListener('click', () => {
+      window.scrollTo({
+        top: window.innerHeight,
+        behavior: 'smooth'
+      });
+    });
+
+    // Floating elements animation
+    const createFloatingObjects = () => {
+      const numObjects = 10;
+      const heroSection = document.querySelector('.hero');
+      
+      if (!heroSection) return;
+      
+      // Create floating objects container
+      const floatingContainer = document.createElement('div');
+      floatingContainer.className = 'floating-objects';
+      heroSection.appendChild(floatingContainer);
+      
+      // Add floating objects
+      for (let i = 0; i < numObjects; i++) {
+        const floatingObj = document.createElement('div');
+        floatingObj.className = 'floating-object';
+        
+        // Randomize properties
+        const size = Math.random() * 50 + 20; // Size between 20-70px
+        const posX = Math.random() * 100; // Position X (0-100%)
+        const posY = Math.random() * 100; // Position Y (0-100%)
+        const duration = Math.random() * 10 + 10; // Animation duration (10-20s)
+        const delay = Math.random() * 5; // Delay (0-5s)
+        
+        // Apply styles
+        floatingObj.style.width = `${size}px`;
+        floatingObj.style.height = `${size}px`;
+        floatingObj.style.left = `${posX}%`;
+        floatingObj.style.top = `${posY}%`;
+        floatingObj.style.animationDuration = `${duration}s`;
+        floatingObj.style.animationDelay = `${delay}s`;
+        
+        // Add to container
+        floatingContainer.appendChild(floatingObj);
+      }
+    };
+    
+    // Initialize floating objects
+    window.addEventListener('load', createFloatingObjects);
+
+    // T-Rex Game
+    class TRexGame {
+      constructor() {
+        this.canvas = document.getElementById('game');
+        this.ctx = this.canvas.getContext('2d');
+        this.width = this.canvas.width;
+        this.height = this.canvas.height;
+        this.dino = {
+          x: 50,
+          y: this.height - 40,
+          width: 40,
+          height: 40,
+          jumping: false,
+          jumpVelocity: 0,
+          gravity: 0.6
+        };
+        this.obstacles = [];
+        this.clouds = [];
+        this.ground = this.height - 20;
+        this.speed = 5;
+        this.score = 0;
+        this.highScore = localStorage.getItem('trexHighScore') || 0;
+        this.gameOver = false;
+        this.gameStarted = false;
+        this.winningPoints = 3;
+        this.obstacleTimer = 0;
+        this.cloudTimer = 0;
+        this.scoreElement = document.getElementById('score');
+        this.highScoreElement = document.getElementById('highScore');
+        this.winStatusElement = document.getElementById('winStatus');
+        this.startButton = document.getElementById('startGame');
+        
+        // Initialize
+        this.init();
+      }
+      
+      init() {
+        this.highScoreElement.textContent = this.highScore;
+        
+        // Add event listeners
+        window.addEventListener('keydown', this.handleKeyDown.bind(this));
+        this.canvas.addEventListener('touchstart', this.handleTouchStart.bind(this));
+        this.startButton.addEventListener('click', this.startGame.bind(this));
+        
+        // Draw initial screen
+        this.clearCanvas();
+        this.drawGround();
+        this.drawDino();
+        this.drawInstructions();
+      }
+      
+      startGame() {
+        if (!this.gameStarted || this.gameOver) {
+          this.gameStarted = true;
+          this.gameOver = false;
+          this.score = 0;
+          this.obstacles = [];
+          this.clouds = [];
+          this.dino.y = this.height - 40;
+          this.dino.jumping = false;
+          this.dino.jumpVelocity = 0;
+          this.scoreElement.textContent = this.score;
+          this.winStatusElement.textContent = '';
+          this.startButton.textContent = 'Restart Game';
+          this.gameLoop();
+        }
+      }
+      
+      resetGame() {
+        this.gameOver = false;
+        this.score = 0;
+        this.obstacles = [];
+        this.clouds = [];
+        this.scoreElement.textContent = this.score;
+        this.winStatusElement.textContent = '';
+        this.dino.y = this.height - 40;
+        this.dino.jumping = false;
+        this.dino.jumpVelocity = 0;
+        this.speed = 5; // Reset speed
+        this.gameLoop();
+      }
+      
+      handleKeyDown(e) {
+        if ((e.code === 'Space' || e.key === ' ' || e.code === 'ArrowUp') && this.gameStarted) {
+          e.preventDefault(); // Prevent page scrolling
+          if (!this.dino.jumping && !this.gameOver) {
+            this.jump();
+          }
+          if (this.gameOver) {
+            this.resetGame();
+          }
+        }
+        
+        // Start game with any key
+        if (!this.gameStarted) {
+          this.startGame();
+        }
+      }
+      
+      handleTouchStart(e) {
+        e.preventDefault(); // Prevent default touch behavior
+        if (this.gameStarted) {
+          if (!this.dino.jumping && !this.gameOver) {
+            this.jump();
+          }
+          if (this.gameOver) {
+            this.resetGame();
+          }
+        } else {
+          this.startGame();
+        }
+      }
+      
+      jump() {
+        this.dino.jumping = true;
+        this.dino.jumpVelocity = -12;
+      }
+      
+      gameLoop() {
+        if (this.gameOver) {
+          this.drawGameOver();
+          return;
+        }
+        
+        this.update();
+        this.render();
+        requestAnimationFrame(this.gameLoop.bind(this));
+      }
+      
+      update() {
+        // Update dino
+        if (this.dino.jumping) {
+          this.dino.y += this.dino.jumpVelocity;
+          this.dino.jumpVelocity += this.dino.gravity;
+          
+          if (this.dino.y >= this.height - 40) {
+            this.dino.y = this.height - 40;
+            this.dino.jumping = false;
+          }
+        }
+        
+        // Create obstacles
+        this.obstacleTimer++;
+        // Adjust difficulty based on score
+        const obstacleFrequency = Math.max(80, 120 - this.score * 2);
+        if (this.obstacleTimer > obstacleFrequency + Math.random() * 50) {
+          this.obstacles.push({
+            x: this.width,
+            y: this.height - 40,
+            width: 20 + Math.random() * 10, // Random width
+            height: 30 + Math.random() * 10 // Random height
+          });
+          this.obstacleTimer = 0;
+        }
+        
+        // Create clouds
+        this.cloudTimer++;
+        if (this.cloudTimer > 200 + Math.random() * 100) {
+          this.clouds.push({
+            x: this.width,
+            y: 20 + Math.random() * 60,
+            width: 40 + Math.random() * 30,
+            height: 20
+          });
+          this.cloudTimer = 0;
+        }
+        
+        // Update obstacles
+        for (let i = 0; i < this.obstacles.length; i++) {
+          // Increase speed as score increases
+          const currentSpeed = this.speed + (this.score / 20);
+          this.obstacles[i].x -= currentSpeed;
+          
+          // Check collision
+          if (
+            this.dino.x < this.obstacles[i].x + this.obstacles[i].width &&
+            this.dino.x + this.dino.width > this.obstacles[i].x &&
+            this.dino.y < this.obstacles[i].y + this.obstacles[i].height &&
+            this.dino.y + this.dino.height > this.obstacles[i].y
+          ) {
+            this.gameOver = true;
+          }
+          
+          // Remove off-screen obstacles and update score
+          if (this.obstacles[i].x + this.obstacles[i].width < 0) {
+            this.obstacles.splice(i, 1);
+            i--;
+            this.score++;
+            this.scoreElement.textContent = this.score;
+            
+            // Check win condition
+            if (this.score >= this.winningPoints) {
+              this.winStatusElement.textContent = 'You Win! Keep playing for a high score!';
+              
+              // Update high score
+              if (this.score > this.highScore) {
+                this.highScore = this.score;
+                localStorage.setItem('trexHighScore', this.highScore);
+                this.highScoreElement.textContent = this.highScore;
+              }
+            }
+          }
+        }
+        
+        // Update clouds
+        for (let i = 0; i < this.clouds.length; i++) {
+          this.clouds[i].x -= this.speed * 0.5;
+          
+          // Remove off-screen clouds
+          if (this.clouds[i].x + this.clouds[i].width < 0) {
+            this.clouds.splice(i, 1);
+            i--;
+          }
+        }
+      }
+      
+      render() {
+        this.clearCanvas();
+        
+        // Draw clouds
+        this.ctx.fillStyle = '#fff';
+        for (let cloud of this.clouds) {
+          this.drawRoundedRect(cloud.x, cloud.y, cloud.width, cloud.height, 5, '#fff');
+        }
+        
+        // Draw ground
+        this.drawGround();
+        
+        // Draw obstacles
+        this.ctx.fillStyle = '#666';
+        for (let obstacle of this.obstacles) {
+          this.drawCactus(obstacle.x, obstacle.y, obstacle.width, obstacle.height);
+        }
+        
+        // Draw dino
+        this.drawDino();
+      }
+      
+      clearCanvas() {
+        this.ctx.clearRect(0, 0, this.width, this.height);
+        this.ctx.fillStyle = '#f8f7f3';
+        this.ctx.fillRect(0, 0, this.width, this.height);
+      }
+      
+      drawGround() {
+        this.ctx.fillStyle = '#c4a484';
+        this.ctx.fillRect(0, this.ground, this.width, this.height - this.ground);
+        
+        // Draw ground texture
+        this.ctx.strokeStyle = '#b3937a';
+        this.ctx.lineWidth = 1;
+        this.ctx.beginPath();
+        for (let i = 0; i < this.width; i += 15) {
+          this.ctx.moveTo(i, this.ground);
+          this.ctx.lineTo(i + 5, this.ground + 2);
+        }
+        this.ctx.stroke();
+      }
+      
+      drawDino() {
+        // Draw a more detailed dino instead of just a rectangle
+        this.ctx.fillStyle = '#333';
+        
+        // Body
+        this.ctx.fillRect(this.dino.x, this.dino.y, this.dino.width * 0.8, this.dino.height * 0.9);
+        
+        // Head
+        this.ctx.fillRect(this.dino.x + this.dino.width * 0.6, this.dino.y - this.dino.height * 0.3, this.dino.width * 0.4, this.dino.height * 0.4);
+        
+        // Eye
+        this.ctx.fillStyle = '#fff';
+        this.ctx.beginPath();
+        this.ctx.arc(this.dino.x + this.dino.width * 0.85, this.dino.y - this.dino.height * 0.15, 3, 0, Math.PI * 2);
+        this.ctx.fill();
+        
+        // Leg
+        this.ctx.fillStyle = '#333';
+        if (!this.dino.jumping) {
+          // Animate legs only when running
+          const legOffset = Math.sin(Date.now() / 100) * 5;
+          this.ctx.fillRect(
+            this.dino.x + 5, 
+            this.dino.y + this.dino.height * 0.9, 
+            10, 
+            10 + legOffset
+          );
+          this.ctx.fillRect(
+            this.dino.x + this.dino.width * 0.6, 
+            this.dino.y + this.dino.height * 0.9, 
+            10, 
+            10 - legOffset
+          );
+        } else {
+          // Both legs tucked when jumping
+          this.ctx.fillRect(
+            this.dino.x + 5, 
+            this.dino.y + this.dino.height * 0.9, 
+            10, 
+            5
+          );
+          this.ctx.fillRect(
+            this.dino.x + this.dino.width * 0.6, 
+            this.dino.y + this.dino.height * 0.9, 
+            10, 
+            5
+          );
+        }
+      }
+      
+      drawCactus(x, y, width, height) {
+        // Draw a more interesting cactus
+        this.ctx.fillStyle = '#3d673d';
+        
+        // Main body
+        this.ctx.fillRect(x + width/4, y - height/4, width/2, height);
+        
+        // Arms
+        this.ctx.fillRect(x, y + height/3, width/3, height/6);
+        this.ctx.fillRect(x + width/3, y + height/5, width/3, height/6);
+        
+        // Add some detail
+        this.ctx.strokeStyle = '#2c4c2c';
+        this.ctx.lineWidth = 1;
+        this.ctx.beginPath();
+        this.ctx.moveTo(x + width/4, y);
+        this.ctx.lineTo(x + width/4, y + height - 5);
+        this.ctx.stroke();
+      }
+      
+      drawRoundedRect(x, y, width, height, radius, color) {
+        this.ctx.fillStyle = color;
+        this.ctx.beginPath();
+        this.ctx.moveTo(x + radius, y);
+        this.ctx.lineTo(x + width - radius, y);
+        this.ctx.quadraticCurveTo(x + width, y, x + width, y + radius);
+        this.ctx.lineTo(x + width, y + height - radius);
+        this.ctx.quadraticCurveTo(x + width, y + height, x + width - radius, y + height);
+        this.ctx.lineTo(x + radius, y + height);
+        this.ctx.quadraticCurveTo(x, y + height, x, y + height - radius);
+        this.ctx.lineTo(x, y + radius);
+        this.ctx.quadraticCurveTo(x, y, x + radius, y);
+        this.ctx.closePath();
+        this.ctx.fill();
+      }
+      
+      drawGameOver() {
+        // Semi-transparent overlay
+        this.ctx.fillStyle = 'rgba(0, 0, 0, 0.3)';
+        this.ctx.fillRect(0, 0, this.width, this.height);
+        
+        // Game over box
+        this.drawRoundedRect(this.width/2 - 150, this.height/2 - 60, 300, 120, 10, 'rgba(255, 255, 255, 0.9)');
+        
+        this.ctx.fillStyle = '#333';
+        this.ctx.font = 'bold 24px Arial';
+        this.ctx.textAlign = 'center';
+        this.ctx.fillText('Game Over', this.width/2, this.height/2 - 25);
+        
+        this.ctx.font = '16px Arial';
+        this.ctx.fillText(`Score: ${this.score}`, this.width/2, this.height/2);
+        
+        this.ctx.font = '14px Arial';
+        this.ctx.fillText('Press Space or Tap to Restart', this.width/2, this.height/2 + 30);
+        
+        // Update high score
+        if (this.score > this.highScore) {
+          this.highScore = this.score;
+          localStorage.setItem('trexHighScore', this.highScore);
+          this.highScoreElement.textContent = this.highScore;
+          
+          this.ctx.fillStyle = '#c4a484';
+          this.ctx.font = 'bold 14px Arial';
+          this.ctx.fillText('New High Score!', this.width/2, this.height/2 + 50);
+        }
+      }
+      
+      drawInstructions() {
+        this.ctx.fillStyle = '#333';
+        this.ctx.font = '16px Arial';
+        this.ctx.textAlign = 'center';
+        this.ctx.fillText('Press Space to Jump', this.width/2, this.height/2 - 10);
+        this.ctx.fillText('or Tap Screen on Mobile', this.width/2, this.height/2 + 10);
+        this.ctx.fillText('Score 3 points to win!', this.width/2, this.height/2 + 40);
+      }
+    }
+    
+    // Initialize game when DOM is loaded
+    document.addEventListener('DOMContentLoaded', () => {
+      const game = new TRexGame();
+    });
+
+    // Theme toggle functionality
+    const themeToggle = document.querySelector('.theme-toggle');
+    const htmlElement = document.documentElement;
+    
+    // Check for saved theme preference
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    htmlElement.setAttribute('data-theme', savedTheme);
+    if (savedTheme === 'dark') {
+      themeToggle.classList.add('dark-mode');
+    }
+    
+    // Toggle theme on click
+    themeToggle.addEventListener('click', () => {
+      themeToggle.classList.toggle('dark-mode');
+      const currentTheme = htmlElement.getAttribute('data-theme');
+      const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+      
+      htmlElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+    });
+  </script>
+</body>
+</html>
